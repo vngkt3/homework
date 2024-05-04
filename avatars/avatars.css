@@ -1,0 +1,59 @@
+body {
+  padding-top: 20%;
+  padding-left: 40%;
+}
+.she {
+  width: 336px;
+  height: 84px;
+}
+
+.he {
+  width: 336px;
+  height: 84px;
+}
+
+.container {
+  position: relative; /*자기 자신 기준으로 배치*/
+  float: left;
+  margin: 10px;
+}
+
+.image {
+  width: 64px;
+  height: 64px; 
+  display: block;
+  border-radius: 50%;
+}
+
+.circle1 {
+  position: absolute; /*부모를 기준으로 배치*/
+  top: 40px;
+  left: 40px;
+  width: 25px;
+  height: 25px;
+  background-color: #EBEBEB; 
+  border-radius: 50%; /* 원 모양으로 스타일링 */
+}
+.circle2 {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 25px;
+  height: 25px; 
+  background-color: #4CFE88;
+  border-radius: 50%;
+}
+
+
+@supports (display: flex) {
+
+.he {
+  display: flex;
+  order: 1; 
+}
+
+.she {
+  display: flex;
+  order: 2; 
+}
+}
